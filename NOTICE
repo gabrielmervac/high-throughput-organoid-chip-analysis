@@ -1,0 +1,31 @@
+This project builds on OrganoID.
+
+    OrganoID: a versatile deep learning platform for tracking and analysis of
+    single-organoid dynamics.
+    Matthews, J. M., Schuster, B., Kashaf, S. S., et al.
+    PLoS Computational Biology 18(11): e1010584 (2022).
+    Source: https://github.com/jono-m/OrganoID
+
+The OrganoID U-Net architecture, its training routine, its image preprocessing,
+its belief-map forward pass, and its 2-D post-processing are used essentially
+unchanged. OrganoID's source is NOT copied into this repository; it is referenced
+as a git submodule under `organoid_tf/`. All rights to the OrganoID code remain
+with its original authors under the terms of that repository.
+
+What this repository adds on top of OrganoID (original work, MIT-licensed — see
+LICENSE):
+
+  * a large-organoid training supplement and a two-stage fine-tuning launcher;
+  * a format-agnostic image reader (`app/io/volume_source.py`) supporting Nikon
+    ND2 and OME-TIFF / ImageJ / plain TIFF inputs;
+  * per-Z segmentation with greedy-IoU Z-stitching for 3-D organoid identity;
+  * a greedy 3-D volumetric-IoU time tracker with gap-closing (replacing
+    OrganoID's 2-D Hungarian tracker for this 3-D use case);
+  * ROI-as-post-hoc-selection, split-detection merging, and inclusion filters;
+  * a 3-D metric suite (trapezoidal-integrated volume, background-subtracted
+    per-channel fluorescence intensities);
+  * a headless, crash-safe, resumable batch analyzer; and
+  * a PyQt6 GUI annotator for interactive segmentation, tracking and review.
+
+If you use this software, please cite both the OrganoID paper above and the
+associated organoid-chip manuscript (see CITATION.cff).

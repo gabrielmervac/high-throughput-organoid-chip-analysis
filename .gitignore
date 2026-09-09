@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Large raw microscopy data — NOT tracked in git (host on Zenodo/figshare).
+*.nd2
+*.orgproj
+*.orgproj.npz
+dataset/
+Experiments/
+
+# Analysis working files
+*.xlsx.tmp
+*_metrics_incremental.csv
+outputs/*.txt
+outputs/tiling_test/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

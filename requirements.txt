@@ -1,0 +1,26 @@
+# Python 3.12, Windows. TensorFlow runs on CPU here (native-Windows TF has no
+# GPU build for recent CUDA / Blackwell cards); the U-Net is small so CPU is fine.
+# OrganoID is a Keras-2 model, so it is run in legacy mode via tf-keras
+# (TF_USE_LEGACY_KERAS=1 is set automatically by the entry points).
+
+tensorflow==2.17.1
+tf_keras==2.17.0
+
+# Image I/O
+nd2==0.11.3            # Nikon ND2 reader (VolumeSource ND2 backend)
+tifffile==2026.3.3     # OME-TIFF / ImageJ / plain TIFF reader (VolumeSource TIFF backend)
+dask==2026.7.1         # lazy per-position ND2 reads
+Pillow==12.3.0         # ROI mask PNG/TIF loading
+
+# Numerics / analysis
+numpy==1.26.4
+scipy==1.17.1
+scikit-image==0.26.0
+pandas==3.0.3
+openpyxl==3.1.5        # .xlsx export
+h5py==3.16.0           # optional HDF5 export
+
+# GUI (interactive annotator). Not needed for the headless CLI beyond the Qt
+# thread machinery it reuses; install if you want organoid_annotator.py.
+PyQt6==6.7.1
+matplotlib==3.11.0     # GUI metric-over-time plots

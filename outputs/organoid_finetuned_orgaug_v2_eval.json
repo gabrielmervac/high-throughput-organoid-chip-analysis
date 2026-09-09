@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-07-21T14:32:42",
+  "model": "D:\\Yiyu\\Organoid ID Finetuned\\models\\organoid_finetuned_orgaug_v2_BEST",
+  "results": [
+    {
+      "split": "validation",
+      "n": 208,
+      "mean_dice": 0.802639768751659,
+      "mean_iou": 0.6903774311606573,
+      "median_dice": 0.8407415463468821,
+      "median_iou": 0.725241078718045,
+      "per_object": {
+        "small": {
+          "n": 916,
+          "mean_iou": 0.5008620203795129,
+          "mean_coverage": 0.5481058343941221
+        },
+        "medium": {
+          "n": 519,
+          "mean_iou": 0.756556795031665,
+          "mean_coverage": 0.8076488367889274
+        },
+        "large": {
+          "n": 22,
+          "mean_iou": 0.7963505837368584,
+          "mean_coverage": 0.8192468839072866
+        },
+        "all": {
+          "n": 1457,
+          "mean_iou": 0.5964051476535888,
+          "mean_coverage": 0.6446521084724979
+        }
+      }
+    },
+    {
+      "split": "testing",
+      "n": 208,
+      "mean_dice": 0.8278824143136123,
+      "mean_iou": 0.717233928333436,
+      "median_dice": 0.849103591177971,
+      "median_iou": 0.7377758723125669,
+      "per_object": {
+        "small": {
+          "n": 1483,
+          "mean_iou": 0.37462246296622614,
+          "mean_coverage": 0.41200239319030163
+        },
+        "medium": {
+          "n": 526,
+          "mean_iou": 0.7419538925206762,
+          "mean_coverage": 0.7681597748090214
+        },
+        "large": {
+          "n": 68,
+          "mean_iou": 0.8159161656811589,
+          "mean_coverage": 0.8340392088532921
+        },
+        "all": {
+          "n": 2077,
+          "mean_iou": 0.4820968508960558,
+          "mean_coverage": 0.5160164934293628
+        }
+      }
+    }
+  ]
+}

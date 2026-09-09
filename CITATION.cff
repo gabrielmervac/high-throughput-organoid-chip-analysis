@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript and the OrganoID paper it builds on."
+title: "High-throughput organoid-chip image analysis pipeline"
+abstract: >-
+  Image-analysis code for a two-layer valve-based microfluidic platform that
+  cultures matrix-embedded patient-derived organoids across 208 individually
+  addressable chambers and resolves schedule-dependent drug responses. The
+  pipeline fine-tunes the OrganoID U-Net for on-chip organoids and adds per-Z
+  3-D reconstruction, greedy 3-D-IoU tracking, and a 3-D growth/viability metric
+  suite, runnable on any ND2 or TIFF time-lapse Z-stack.
+authors:
+  - family-names: "REPLACE-WITH-YOUR-SURNAME"
+    given-names: "REPLACE-WITH-YOUR-GIVEN-NAME"
+license: MIT
+repository-code: "https://github.com/gabrielmervac/high-throughput-organoid-chip-analysis"
+keywords:
+  - organoids
+  - microfluidics
+  - functional precision oncology
+  - deep learning
+  - image segmentation
+  - OrganoID
+references:
+  - type: article
+    title: "OrganoID: a versatile deep learning platform for tracking and analysis of single-organoid dynamics"
+    authors:
+      - family-names: Matthews
+        given-names: Jonathan M.
+      - family-names: Schuster
+        given-names: Brooke
+      - family-names: Kashaf
+        given-names: Sara Saheb
+    journal: "PLoS Computational Biology"
+    volume: 18
+    issue: 11
+    year: 2022
+    doi: "10.1371/journal.pcbi.1010584"
