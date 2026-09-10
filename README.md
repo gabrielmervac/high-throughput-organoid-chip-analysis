@@ -159,6 +159,11 @@ source data underlying the growth and viability readouts in the manuscript.
 Please cite the associated manuscript (see `CITATION.cff`) **and** the OrganoID
 paper this builds on (see `NOTICE`).
 
+## Acknowledgements
+
+During the creation of this code we used Anthropic's Claude as an AI coding
+assistant. All code was reviewed and validated by the authors.
+
 ## License
 
 Original code in this repository is released under the **MIT License**
